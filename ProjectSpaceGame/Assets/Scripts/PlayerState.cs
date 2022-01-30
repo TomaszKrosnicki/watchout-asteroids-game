@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerState : MonoBehaviour
 {
-    // Stany gracza
     public static bool isDead = false;
     public static bool isPlaying = true;
     public static float countOne = 0;
@@ -64,7 +63,7 @@ public class PlayerState : MonoBehaviour
         }
 
         if(fuel == 0)
-            isDead= true;
+            isDead = true;
 
         GoLeft();
         GoRight();
