@@ -1,3 +1,13 @@
+/*
+    Klasa odpowiedzialna za tworzenie asteroid w tle na początku rozgrywki.
+    Skrypt jest przypięty do pustego obiektu.
+    Dodajemy do tablicy obiekty które chcemy wygenerować.
+    Obiekt jest losowany z podanej w tablicy puli i tworzony w płaszczyźnie pustego obiektu 
+    posiadającego skrypt (od -100 do 100 w osiach x i y), z losowym obrotem,
+    następnie pusty obiekt jest przesuwany o 30 jednostek po osi z.
+    Generowane jest w ten sposób 30 asteroid na każdy pusty obiekt.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

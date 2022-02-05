@@ -1,3 +1,11 @@
+/*
+    Klasa odpowiada za wyświetlanie statystyk w trakcie gry oraz w oknie Końca Gry
+    *   Score (punkty za gwiazdki)
+    *   FinalScore (wynik końcowy, czyli suma punktów za gwiazdki oraz za dystans)
+    *   Distance (punkty za dystans)
+    *   Fuel (stan paliwa)
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,6 +38,6 @@ public class DisplayStats : MonoBehaviour
             for(int i = 0; i < distance.Length; i++)
             distance[i].text = "Distance: 0";
 
-            fuel.text = "" + PlayerState.fuel;
+        fuel.text = "" + PlayerState.fuel;
     }
 }

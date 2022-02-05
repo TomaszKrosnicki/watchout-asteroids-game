@@ -1,3 +1,8 @@
+/*
+    Klasa odpowiada za wyświetlanie ostatniego wyniku
+    oraz największego wyniku w oknie statystyk w Menu Głównym
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

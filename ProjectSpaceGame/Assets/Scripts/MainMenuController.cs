@@ -1,3 +1,13 @@
+/*
+    Klasa odpowiadająca za Menu Główne (Main Menu).
+    Na początku wszystkie okna są wyłączane.
+    Jeśli wciśniemy przcisk Quit, program zostanie zamknięty.
+    Jeśli wciśniemy przycisk Play, zostanie załadowana scena rozgrywki i rozgrywka się rozpocznie.
+    W przypadku pozostałych przycisków, po ich wciśnięciu wyświetli się odpowiednie okno 
+    (przypisane jako dziecko o indeksie 1 danego przycisku). 
+    Jeśli w oknie wciśniemy przycisk Back, okno się zamknie o powrócimy do Menu Głównego.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

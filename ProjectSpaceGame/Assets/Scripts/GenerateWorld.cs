@@ -1,3 +1,12 @@
+/*
+    Klasa odpowiadająca za generowanie obiektów świata, w której porusza się gracz.
+    Skrypt jest przypięty do pustego obiektu (WorldGenerator).
+    Po uruchomieniu rozgrywki generowane jest 20 obiektów z zadanej w klasie Pool,
+    puli obiektów.
+    Obiekty są generowane w płaszczyźnie pustego obiektu, następnie pusty obiekt przesuwa się o zadaną wartość po osi z. (Jak w przypadku GenerateBG)
+    Dodatkowo jeśli wylosowany obiekt do wygenerowania to asteroida, nadawany jest mu losowy obrót oraz skala z podanego przedziału (1 do 3).
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

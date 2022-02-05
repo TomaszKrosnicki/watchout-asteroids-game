@@ -1,3 +1,11 @@
+/*  
+    Klasa odczytuje kolizje statku gracza,
+    w zależności od obiektu na który trafił, zostaje wykonana odpowiednia sekwencja:
+    *   Jeśli obiektem jest asteroida to gracz przegrywa i wywoływana jest sekwencja wybuchu.
+    *   Jeśli obiektem jest gwiazda to gracz otrzymuje 10 punktów oraz zostaje utworzony nowy obiekt.
+    *   Jeśli obiektem jest paliwo to gracz otrzymuje 25 jednostek paliwa oraz zostaje utworzony nowy obiekt.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

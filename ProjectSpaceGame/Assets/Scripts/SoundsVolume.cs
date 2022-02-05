@@ -1,3 +1,7 @@
+/*
+    Klasa odpowiedzialna za zapisywanie ustawień głośności dźwięków w Menu Opcji
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

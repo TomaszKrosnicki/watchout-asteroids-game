@@ -1,3 +1,10 @@
+/*
+    Klasa odpowiedzialna za poruszanie się statku.
+    Skrypt jest podpięty do  pustego obiektu kontrolującego ruchy statku.
+    Odpowiada również za odtwarzanie muzyki.
+    Gracz ma również ograniczone ruchy do powierzchni obrazu kamery. Nie można wylecieć poza wyznaczony obszar.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

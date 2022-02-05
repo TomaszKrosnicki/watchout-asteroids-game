@@ -1,7 +1,12 @@
+/*
+    Klasa tworząca miejsce zapisu satystyk.
+    Jeśli miejsca (zmienne PlayerPrefs) nie zostały utworzone to zostają utworzone nowe z wartością 0.
+    Odpowiada za aktualizowanie punktów za gwiazdki oraz za dystans.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameData : MonoBehaviour
 {

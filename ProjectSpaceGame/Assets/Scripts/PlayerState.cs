@@ -1,3 +1,11 @@
+/*
+    Skrypt odpowiedzialny za stany gracza:
+    *   Czy gracz przerwał grę?
+    *   Czy gracz przegrał?
+    *   Wyświetlanie animacji gdy gracz skręca statkiem.
+    Odpowiada również za zapisywanie statystyk.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,32 +37,14 @@ public class PlayerState : MonoBehaviour
     void Update()
     {
         Pause();
-        if (isDead || GameMenu.gm.exitToMenu) 
+        if (isDead || GameMenu.gm.exitToMenu)
         {
+            if(isDead)
+                SetStatistics();
             countOne = 0f;
             countTen = 0f;
             distanceMultiplyer = 1f;
             distance = 0f;
-            fuel = 50;
-            int a = PlayerPrefs.GetInt("score");
-            int b = PlayerPrefs.GetInt("distance");
-            int c = a + b;
-            PlayerPrefs.SetInt("finalScore", c);
-            if(PlayerPrefs.HasKey("lastscore"))
-            {
-                PlayerPrefs.SetInt("lastscore", PlayerPrefs.GetInt("finalScore"));
-            }
-            if(PlayerPrefs.HasKey("highscore"))
-            {
-                int hs = PlayerPrefs.GetInt("highscore");
-                if (hs < PlayerPrefs.GetInt("lastscore"))
-                    PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("lastscore"));
-            }
-            else
-            {
-                int hs = 0;
-                PlayerPrefs.SetInt("highscore", hs);
-            }
             return;
         }
         else if (!isPlaying)
@@ -82,6 +72,29 @@ public class PlayerState : MonoBehaviour
         {
             distanceMultiplyer = distanceMultiplyer + (distanceMultiplyer * 0.1f);
             countTen = 0f;
+        }
+    }
+
+    public static void SetStatistics()
+    {
+        int a = PlayerPrefs.GetInt("score");
+        int b = PlayerPrefs.GetInt("distance");
+        int c = a + b;
+        PlayerPrefs.SetInt("finalScore", c);
+        if (PlayerPrefs.HasKey("lastscore"))
+        {
+            PlayerPrefs.SetInt("lastscore", PlayerPrefs.GetInt("finalScore"));
+        }
+        if (PlayerPrefs.HasKey("highscore"))
+        {
+            int hs = PlayerPrefs.GetInt("highscore");
+            if (hs < PlayerPrefs.GetInt("lastscore"))
+                PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("lastscore"));
+        }
+        else
+        {
+            int hs = 0;
+            PlayerPrefs.SetInt("highscore", hs);
         }
     }
 

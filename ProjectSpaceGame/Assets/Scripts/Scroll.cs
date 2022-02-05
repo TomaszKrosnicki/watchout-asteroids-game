@@ -1,3 +1,10 @@
+/*
+    Skrypt odpowiedzialny za przesuwanie się świata (to nie statek leci do przodu tylko obiekty się przesuwają).
+    Szybkość przesuwania wzrasta o 10% co 10 sekund.
+    Jeśli gracz przegra lub wyjdzie do Menu Głównego zmienne są przywracane do początkowych wartości.
+    Jeśli gracz zatrzyma grę, skrypt nic nie wykonuje.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

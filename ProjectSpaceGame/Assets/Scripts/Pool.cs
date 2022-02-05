@@ -1,3 +1,10 @@
+/*
+    Skrypt odpowiada za utworzenie puli obiektów.
+    Tworzona jest lista do której dodajemy prefabrykaty i opisujemy cechy (ilość oraz czy ilość może się zwiększać).
+    Na podstawie utworzonej listy, tworzona jest druga lista (Pula) zawierająca obiekty w ilościach według opisu.
+    Pula jest losowana a następnie wylosowany obiekt jest wykorzystywany do wygenerowania.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/*
+    Klasa odpowiedzialna za efekt wybuchu.
+    Obiektem posiadającym ten skrypt jest "FracturedSpaceship", czyli statek podzielony na kawałki.
+    Kawałki statku poddawane są symulacji z udziałem sił wybuchu,
+    następnie po opóźnieniu, fragmenty statku są niszczone.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
